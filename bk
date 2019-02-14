@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Go back x directories
+
+DIR=""
+i=0
+while (($i < $1))
+do
+    DIR+=../
+    ((i++))
+done
+
+cd $DIR
